@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pothuganti Vijay Rama Rao - Full Stack Developer & Data Scientist">
+    <title>Vijay Rama Rao | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">VRR</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+            <!-- Add ARIA labels -->
+        <button class="theme-toggle" 
+                aria-label="Toggle dark mode"
+                role="switch"
+                aria-checked="false">
+            <span class="sr-only">Toggle dark mode</span>
+            <i class="fas fa-moon"></i>
+        </button>
+
+
+    <section id="hero" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="glitch" data-text="Vijay Rama Rao">Vijay Rama Rao</h1>
+            <div class="typing-text">
+                <span class="text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-links">
+                <a href="https://github.com/pothugantivijay" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vijayramaraopothuganti" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:vijaypothuganti1@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Graduate student at Northeastern University, Boston, specializing in Information Systems. Passionate about creating innovative solutions through full-stack development and data science.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Northeastern University</h4>
+                        <p>MS in Information Systems | 2023-2025</p>
+                        <p class="courses">Key courses: Application Engineering, Data Science, Cloud Computing</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Vasavi College of Engineering</h4>
+                        <p>Bachelor of Engineering | 2018-2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="count">2025</span>
+                    <span>Expected Graduation</span>
+                </div>
+                <div class="stat-item">
+                    <span class="count">30%</span>
+                    <span>DevOps Optimization</span>
+                </div>
+                <div class="stat-item">
+                    <span class="count">3</span>
+                    <span>Full Stack Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="count">2</span>
+                    <span>Universities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section id="experience" class="experience" data-aos="fade-up">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+          <div class="timeline-item">
+              <div class="timeline-content">
+                  <div class="company-header">
+                      <h3>Software Engineer Intern</h3>
+                      <h4>Wipro</h4>
+                      <span class="date">July 2022 - December 2022</span>
+                  </div>
+                  <div class="achievements">
+                      <div class="achievement-item">
+                          <i class="fas fa-code"></i>
+                          <p>Developed secure, stable, and testable code using Java Spring Boot for backend and React for frontend, enhancing application performance by 20%</p>
+                      </div>
+                      <div class="achievement-item">
+                          <i class="fas fa-server"></i>
+                          <p>Implemented DevOps practices using Git and GitHub for version control, reducing deployment time by 30% through automated CI/CD pipelines</p>
+                      </div>
+                      <div class="achievement-item">
+                          <i class="fas fa-users"></i>
+                          <p>Collaborated with a team of 8 to design and implement RESTful APIs using Node.js and Express, facilitating seamless integration between frontend and backend services</p>
+                      </div>
+                      <div class="achievement-item">
+                          <i class="fas fa-database"></i>
+                          <p>Developed and optimized SQL queries for MySQL and MongoDB databases, improving data retrieval speed by 25% across 2 major projects</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+            <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Boston Housing Price Prediction</h3>
+                    <p>ML-based prediction system using Random Forest and Linear Regression</p>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Developed machine learning models (Linear Regression, Random Forest) to predict housing prices using the Boston Housing dataset</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-database"></i>
+                        <p>Conducted exploratory data analysis (EDA) with Seaborn/Matplotlib and applied data preprocessing techniques</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <p>Optimized model performance through hyperparameter tuning (GridSearchCV) and evaluated using R-squared and Mean Squared Error metrics</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-code"></i>
+                        <p>Utilized Python, Pandas, NumPy, and Scikit-learn for data manipulation and model building</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pothugantivijay/boston-housing-price-prediction.git" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>SecureOps</h3>
+                    <p>Secure user operations web application with automated workflows</p>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Engineered a secure and robust user operations web application using Java Spring Boot</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-terminal"></i>
+                        <p>Optimized deployment and operational processes through custom Linux scripting and MariaDB integration</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-code-branch"></i>
+                        <p>Established a CI/CD pipeline, integrating version control for automated testing workflows</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Developed a Python-based automated email verification system</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Spring Boot</span>
+                        <span>MariaDB</span>
+                        <span>Python</span>
+                        <span>Linux</span>
+                        <span>DNS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pothugantivijay.github.io/network-structure-and-cloud/" target="_blank">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>DocBook</h3>
+                    <p>Full-stack medical appointment scheduling system</p>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Developed a full-stack web application using React and Node.js</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <p>Implemented a streamlined appointment scheduling system with notifications</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-database"></i>
+                        <p>Used Firebase for authentication and real-time database management</p>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Firebase</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pothugantivijay/docbook.git" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                  <div class="project-card">
+              <div class="project-content">
+                  <h3>MEDICARE: Medical Group Management Platform</h3>
+                  <p>Java Swing-based healthcare management platform for emergency services</p>
+                  <div class="feature-item">
+                      <i class="fas fa-hospital"></i>
+                      <p>Developed a Java Swing-based platform to connect hospitals, pharmacies, and volunteers</p>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-user-plus"></i>
+                      <p>Enabled patient registration and emergency response mechanisms</p>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-ambulance"></i>
+                      <p>Designed rapid response systems for critical care involving ambulance services</p>
+                  </div>
+                  <div class="tech-stack">
+                      <span>Java</span>
+                      <span>Swing</span>
+                      <span>NetBeans</span>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <span>Java (Primary)</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <span>TypeScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Web Technologies</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <span>React & Redux</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5/CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-desktop"></i>
+                    <span>Swing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Data Science & Analytics</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>NumPy</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-table"></i>
+                    <span>Pandas</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Matplotlib</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>DevOps & Cloud</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub/CI/CD</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-google"></i>
+                    <span>GCP</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Terraform</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-linux"></i>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <a href="mailto:vijaypothuganti1@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Mailto</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vijayramaraopothuganti" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/pothugantivijay" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pothuganti Vijay Rama Rao</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
