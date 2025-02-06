@@ -1,3 +1,10 @@
+// Add this to your script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS
+    AOS.init();
+    // Your other JavaScript code
+});
+
 // Initialize AOS
 AOS.init({
     duration: 800,
