@@ -1,10 +1,3 @@
-// Add this to your script.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS
-    AOS.init();
-    // Your other JavaScript code
-});
-
 // Initialize AOS
 AOS.init({
     duration: 800,
@@ -41,25 +34,15 @@ type();
 
 // Theme Toggle
 const themeToggle = document.querySelector('.theme-toggle');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-const currentTheme = localStorage.getItem('theme');
-
-if (currentTheme) {
-    document.body.setAttribute('data-theme', currentTheme);
-    themeToggle.innerHTML = currentTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-} else if (prefersDarkScheme.matches) {
-    document.body.setAttribute('data-theme', 'dark');
-    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-}
-
 themeToggle.addEventListener('click', () => {
-    let theme = document.body.getAttribute('data-theme');
-    let newTheme = theme === 'dark' ? 'light' : 'dark';
-    
+    const currentTheme = document.body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.body.setAttribute('data-theme', newTheme);
+    themeToggle.querySelector('i').className = 
+        newTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
     localStorage.setItem('theme', newTheme);
-    themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 });
+
 
 // Mobile Menu
 const mobileMenu = document.querySelector('.mobile-menu');
