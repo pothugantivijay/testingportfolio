@@ -1,3 +1,7 @@
+/* Add this to the top of your styles.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
+
 :root {
     --primary: #2563eb;
     --secondary: #3b82f6;
